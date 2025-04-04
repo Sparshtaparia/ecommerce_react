@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+.home-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.1));
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.hero-section {
+    max-width: 600px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 12px;
+    backdrop-filter: blur(8px);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.hero-section:hover {
+    transform: translateY(-5px);
+}
+
+.hero-section h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.hero-section p {
+    font-size: 1.2rem;
+    opacity: 0.8;
+}
+
+.shop-btn {
+    background: #4CAF50;
+    color: white;
+    padding: 12px 25px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background 0.3s, transform 0.2s;
+    -webkit-transition: background 0.3s, transform 0.2s;
+    -moz-transition: background 0.3s, transform 0.2s;
+    -ms-transition: background 0.3s, transform 0.2s;
+    -o-transition: background 0.3s, transform 0.2s;
+}
+
+.shop-btn:hover {
+    background: #45a049;
+    transform: scale(1.05);
+}

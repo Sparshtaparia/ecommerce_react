@@ -1,0 +1,85 @@
+/* Sidebar */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px; /* Move completely off-screen */
+    width: 250px;
+    height: 100vh;
+    background: #000; /* Pure black */
+    color: white;
+    transition: left 0.3s ease-in-out;
+    box-shadow: 4px 0 10px rgba(0, 0, 0, 0.3);
+    padding-top: 60px;
+    z-index: 1000;
+}
+
+/* When Open */
+.sidebar.open {
+    left: 0; /* Bring it into view */
+}
+
+/* Close Button */
+.close-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Menu Items */
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar li {
+    padding: 15px 20px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.sidebar li:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* Overlay */
+.sidebar-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+/* ✅ Fix for Sidebar Button inside Header */
+.menu-btn {
+    position: absolute;
+    top: 6.5%;
+    left: 10px;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1100;
+}
+
+/* Header Fix */
+.header {
+    position: relative; /* Ensures menu button stays inside */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: black; /* Pure black */
+    color: white;
+    height: 60px; /* Fixed height */
+}

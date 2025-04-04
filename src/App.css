@@ -1,0 +1,64 @@
+:root {
+  --background: #181818;
+  --header-bg: #000; /* Pure black */
+  --card-bg: rgba(255, 255, 255, 0.1);
+  --text: #fff;
+  --accent: #4CAF50;
+}
+
+
+body {
+  background: var(--background);
+  color: var(--text);
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header Styling */
+.header {
+  position: relative; /* Allow absolute positioning of child elements */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: black; /* Pure black */
+  color: white;
+  height: 60px; /* Ensure fixed height */
+}
+
+
+/* Logo */
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: var(--accent);
+  margin-left: 20px;
+}
+
+/* Icons */
+.cart-icon, .menu-btn {
+  background: none;
+  border: none;
+  color: var(--text);
+  font-size: 24px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.cart-icon:hover, .menu-btn:hover {
+  color: var(--accent);
+}
+
+/* Cart Counter */
+.cart-count {
+  background: var(--accent);
+  color: #000;
+  font-size: 12px;
+  border-radius: 50%;
+  padding: 3px 8px;
+  position: absolute;
+  margin-left: -5px;
+  margin-top: -10px;
+  font-weight: bold;
+}

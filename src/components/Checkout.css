@@ -1,0 +1,83 @@
+/* 📌 Unified Checkout Page Styling */
+.checkout-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: var(--primary-bg, rgba(0, 0, 0, 0.2));
+    padding: 20px;
+    margin-top: -50px; 
+}
+
+/* 💳 Checkout Form Box */
+.checkout-form {
+    width: 100%;
+    max-width: 450px;
+    background: var(--primary-bg, rgba(255, 255, 255, 0.1));
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+/* 🏷️ Heading */
+.checkout-form h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--primary-text, #fff);
+    margin-bottom: 20px;
+}
+
+/* ✏️ Form Inputs */
+.checkout-form input {
+    width: calc(100% - 20px);
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 6px;
+    font-size: 16px;
+    display: block;
+    background: var(--input-bg, rgba(255, 255, 255, 0.2));
+    color: var(--primary-text, #fff);
+}
+
+/* 🖊️ Input Focus Effect */
+.checkout-form input:focus {
+    border-color: #4caf50;
+    box-shadow: 0 0 6px rgba(76, 175, 80, 0.5);
+    outline: none;
+}
+
+/* ⚠️ Error Message */
+.error {
+    color: #ff4d4d;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+/* ✅ Checkout Button */
+.checkout-btn {
+    background: var(--primary-btn, #4caf50);
+    color: white;
+    border: none;
+    padding: 12px;
+    width: 100%;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.checkout-btn:hover {
+    background: var(--primary-btn-hover, #45a049);
+}
+
+/* 📱 Responsive Design */
+@media (max-width: 480px) {
+    .checkout-form {
+        max-width: 95%;
+        padding: 20px;
+    }
+}
